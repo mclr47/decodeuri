@@ -1,0 +1,152 @@
+/* .example-viewport {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+  } */
+  
+  .example-item {
+    height: 50px;
+    margin: 2em;
+  }
+  .example-viewport {
+    height:90%;
+    width: 200px;
+    border: 1px solid black;
+    scrollbar-width: none;
+    /* margin: 3rem;  */
+    display:grid;
+  }
+  
+  .example-item-detail {
+    height: 18px;
+  }
+  
+  .example-alternate {
+    background: rgba(127, 127, 127, 0.3);
+  }
+  .active-fragment{
+      position: sticky;
+  }
+  .active-fragment{
+    position: fixed;
+    margin-left: 250px;
+    z-index: 5;
+    background-color: gold;
+  }
+  .scrollToRight{
+    margin-left: 1500px;  
+    position: fixed;
+    z-index: 50;
+    background-color: greenyellow;
+  }
+  .first-scroll{
+    position: fixed;
+    z-index: 50;
+    background-color: greenyellow;
+  }
+  .first-scroll::marker{
+   scrollbar-arrow-color: darkred;
+   content: "{";
+   color:dodgerblue;
+  }
+  .first-scroll div h3::marker{
+    /* scrollbar-arrow-color: darkred; */
+    content: "{";
+    color:dodgerblue;
+    /* cursor: pointer; */
+   }
+   .first-scroll div h3:hover{
+    /* scrollbar-arrow-color: darkred; */
+    content: "{";
+    color:dodgerblue;
+    cursor: pointer;
+   }
+
+ul li::marker{
+  color:green;
+  background-color: khaki;
+  font-weight: 900;
+}
+ul li:hover::marker{
+  color:midnightblue;
+  font-weight: 900;
+}
+/* .mainContainer{
+  overflow: auto;
+  white-space:nowrap;
+} */
+  .mainContainer{
+    /* height: calc(100vh); */
+  /* overflow-x: scroll; */
+  /* position: absolute; */
+/* overflow: scroll;
+overscroll-behavior-x:inherit; */
+ overscroll-behavior: inherit; 
+display:inline-flexbox;
+overflow: auto;
+/* white-space: nowrap; */
+  }
+
+  .activeIndex{
+    background-color: indigo;
+    color:lightgoldenrodyellow;
+    font-weight: 900;
+  }
+  .activeIndex::marker{
+    background-color: rgb(221, 38, 13);
+    color: yellow;
+    font-weight: 900;
+  }
+  
+  /* .router-link-active
+  {background-color: orange;
+  color:green;} */
+  /* .cdk-scroll-class{
+    min-height: 100%;
+  } */
+  router-link-active{
+      background-color: darkorange;
+  }
+/* h1::marker{
+display: list-item;
+content:"#";
+
+} */
+h1{
+    /* counter-increment: h3; */
+    display: list-item;
+  }
+  
+  h1::marker {
+    display: list-item;
+    content: "*" ;
+    /* counter(h3) " "; */
+    color: lightsalmon;
+    font-weight: bold;
+    /* list-style:square */
+  }
+  
+  .headerMarker {
+    /* counter-reset: h3; */
+    /* line-height: 1.4;
+    font-family: system-ui;*/
+    margin: 3rem; 
+  }
+  h3{
+    /* counter-increment: h3; */
+    display: list-item;
+  }
+  
+  h3::marker {
+    display: list-item;
+    content: "*" ;
+    /* counter(h3) " "; */
+    color: lightsalmon;
+    font-weight: bold;
+    /* list-style:square */
+  }
+  router-link-active{
+    background: white;
+    color:green;
+    border:indigo solid 2px;
+  }
