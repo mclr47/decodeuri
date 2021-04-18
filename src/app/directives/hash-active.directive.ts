@@ -20,12 +20,7 @@ export class HashActiveDirective {
   // The input  <<<elem id>>> can be taken out since can be identified as (this.el.nativeElement as HTMLElement).id 
   @Input() idexToc: string; 
 
-  // @Output() inFocusViewEventEmitter = new EventEmitter(); 
-  // constructor(private el:ElementRef, private router:Router,
-  //   private activatedRoute:ActivatedRoute) {
-  //   this.hashOnFocusScrollObject = {hashVisible: false,
-  //     hashName: ''}
-  //  }
+
 
   constructor(private platformLocation : PlatformLocation,
     private elementRef:ElementRef,

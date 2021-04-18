@@ -1,14 +1,4 @@
-// import { Directive } from '@angular/core';
 
-// @Directive({
-//   selector: '[appHashSpy]'
-// })
-// export class HashSpyDirective {
-
-//   constructor() { }
-
-// }
-// 
 import {HashExist } from './../comp/scroll/scroll.component';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Directive ,ElementRef, 
