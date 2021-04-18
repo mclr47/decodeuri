@@ -80,7 +80,7 @@ export class ScrollComponent implements OnInit , AfterViewInit{
     }
 
   ngOnInit(): void {
-    this.viewPort.scrollTo({bottom:0});
+    // this.viewPort.scrollTo({bottom:0});
     // this.viewPort.elementScrolled.apply.
     // this.virtualScrollViewport.scrollIntoView(false);
     this.location.subscribe(loc=>{

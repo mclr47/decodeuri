@@ -31,7 +31,6 @@
            <!-- [itemSize]="11" or [itemSize]="55"-->
             <div *cdkVirtualFor="let item of items;
                                  let index = index; templateCacheSize: 8" 
-                                 
                                  class="example-item">
                 <h3  [ngClass]="{activeIndex: index==(activeScrollIndex|async)}"
                 routerLink="scroll"
